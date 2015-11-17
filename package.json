@@ -1,0 +1,13 @@
+{
+  "name": "node-ejs",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.14.1",
+    "ejs": "^1.0.0",
+    "express": "^4.6.1",
+    "express-session": "^1.12.1",
+    "moment": "^2.10.6",
+    "session": "^0.1.0"
+  }
+}

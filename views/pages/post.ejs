@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<% include ../partials/header %>
+  <div class="mdl-grid" style="align-items: center; justify-content: center;">
+  <div class="post-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col" >
+  <div class="mdl-card__title" style="background: url('<%= post.image %>') center / cover; height: 256px; color: #fff;">
+    <h2 class="mdl-card__title-text"><%= post.title %></h2><br />
+  </div>
+  <div class="mdl-card__supporting-text" style="font-size: 125%;">
+  <p>Written <%= post.timestamp %></p>
+  <p>
+   <%- post.post %>
+   </p>
+  </div>
+</div>
+</div>
+<% include ../partials/footer %>
+</body>
+
+</html>

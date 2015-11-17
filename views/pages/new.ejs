@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<% include ../partials/header %>
+
+ <div class="mdl-grid" style="align-items: center; justify-content: center;">
+  <div class="post-card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col" >
+  <div class="mdl-card__title" align="center">
+    <h2 class="mdl-card__title-text">Welcome</h2>
+  </div>
+  <div class="mdl-card__supporting-text" style="font-size: 125%;">
+
+    <h6>This form supports inline HTML</h6>
+  	<form action="/new" method="post">
+					<div class="mdl-textfield mdl-js-textfield">
+						<input class="mdl-textfield__input" type="text" id="title" name="title"/>
+						<label class="mdl-textfield__label" for="title">Title</label>
+					</div><br />
+					<div class="mdl-textfield mdl-js-textfield">
+						<input class="mdl-textfield__input" type="text" id="author" name="author" />
+						<label class="mdl-textfield__label" for="author">Author</label>
+					</div><br />
+					<br />
+					<div class="mdl-textfield mdl-js-textfield">
+						<input class="mdl-textfield__input" type="text" id="image" name="image" />
+						<label class="mdl-textfield__label" for="image">Header Image URL</label>
+					</div><br />
+					<h6>Description</h6>
+					<textarea style="width:100%;" rows="5" id="description" name="description"></textarea>
+					<br />
+					<br />
+					<h6>Post</h6>
+					<textarea style="width:100%;" rows="15" id="post" name="post"></textarea>
+					<br />
+					<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit">Submit</button>
+				</form>
+
+ </div>
+</div>
+</div>
+<% include ../partials/footer %>
+</body>
+
+</html>
