@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <% include ../partials/header %>
+<% include ../partials/header %>
+
 <div class="mdl-grid" style="align-items: center; justify-content: center;">
-
 <% posts.forEach(function(post) { %>
-
 <div class="mdl-card mdl-cell--middle mdl-shadow--4dp mdl-card--border mdl-cell mdl-cell--8-col ">
   <div class="mdl-card__title" style="height: 176px; background: url('<%= post.image %>') center / cover; color: #fff;">
      <h2 class="mdl-card__title-text"><%= post.title %> </h2>
@@ -21,12 +19,8 @@
  </div>
   <% }); %>
 </div>
-</main>
+
 <% include ../partials/footer %>
-
-  
-
-
 </body>
 
 </html>
